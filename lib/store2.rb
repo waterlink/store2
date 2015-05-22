@@ -1,5 +1,11 @@
-require "store2/version"
+%w[
+  version
+
+  facade
+  file
+  scoped
+].each { |name| require "store2/#{name}" }
 
 module Store2
-  # Your code goes here...
+  extend Facade
 end

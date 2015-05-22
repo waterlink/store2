@@ -28,28 +28,28 @@ require "store2"
 
 ```ruby
 store2 = Store2.open("test.yml")
-# => <#Store2::File:0x00f28746a47 @filename = "test.yml">
+# => #<Store2::File:0x00f28746a47 @filename = "test.yml">
 ```
 
 ### Get root-scoped store object
 
 ```ruby
 root_scoped = store2.build
-# => <#Store2::Scoped:0x00f2d746a41 @keys = []>
+# => #<Store2::Scoped:0x00f2d746a41 @keys = []>
 ```
 
 ### Get scoped store object
 
 ```ruby
 user_scoped = store2.scoped("users", "72AC97F03A")
-# => <#Store2::Scoped:0x00a2d746a91 @keys = ["users", "72AC97F03A"]
+# => #<Store2::Scoped:0x00a2d746a91 @keys = ["users", "72AC97F03A"]
 ```
 
 ### Get scoped store object out of another scoped store object
 
 ```ruby
 items_scoped = user_scoped.scoped("items")
-# => <#Store2::Scoped:0x00922faa907 @keys = ["users", "72AC97F03A", "items"]
+# => #<Store2::Scoped:0x00922faa907 @keys = ["users", "72AC97F03A", "items"]
 ```
 
 ### Reading the value
