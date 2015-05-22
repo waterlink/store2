@@ -1,3 +1,5 @@
+require "yaml"
+
 %w[
   version
 

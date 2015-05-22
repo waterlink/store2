@@ -11,6 +11,7 @@ module Store2
     end
 
     def _reset
+      File._reset
     end
   end
 end

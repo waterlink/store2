@@ -12,3 +12,5 @@
 *.o
 *.a
 mkmf.log
+test.yml
+test_other.yml
