@@ -117,6 +117,18 @@ items_scoped.save
 
 All of them eventually will delegate to `store.save`
 
+### Resetting all stores in tests (RSpec example)
+
+```ruby
+RSpec.configure do |c|
+  c.around do |example|
+    Store2._with_reset do
+      example.run
+    end
+  end
+end
+```
+
 ## Contributing
 
 1. Fork it ( https://github.com/waterlink/store2/fork )
